@@ -65,7 +65,8 @@ function Chat() {
                 <ChatBottom  ref={chatRef} />
             </ChatMessages>
 
-            <ChatInput 
+            <ChatInput
+                chatRef={chatRef} 
                 channelName={roomDetails?.data().name}
                 channelId={roomId}
             />
